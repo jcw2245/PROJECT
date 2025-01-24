@@ -1,8 +1,6 @@
 from flask import Flask
 from flask import render_template
 import pandas as pd
-import gunicorn
-gunicorn app:app
 from flask import Flask, render_template, request
 
 
