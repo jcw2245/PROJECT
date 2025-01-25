@@ -23,15 +23,7 @@
 
     <p>
       <strong>List of all park monuments:</strong>
-      <ul>
-        {% for park in parks %}
-        <li>
-            <a href="/parks/{{ park['park_code'] }}">{{ park['title'] }}</a> 
-        </li>
-        {% endfor %}
-      </ul>
-      <h1>{{park['park_name']}}</h1>
-    
+      
   </p>
 
   </body>
