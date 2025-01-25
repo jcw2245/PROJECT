@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Parks by Borough</title>
+    <style>
+      h1 { color: darkolivegreen; }
+      h3 { color: rgb(46, 70, 49); }
+      p {color:rgb(28, 37, 28)}
+      a { color: darkblue; text-decoration: none; }
+      a:hover { text-decoration: underline; }
+    </style>
+  </head>
+  <body style="background-color:rgb(212, 219, 218);">
+    <h1 style="text-align: center;">About the New York City Department of Parks and Recreation</h1>
+    <h3> Hours of Operation:
+      <p>Parks: 6:00 a.m. - 10:00 p.m. or 6:00 a.m. - 1:00 a.m.</p>
+      <p>Playgrounds: 6:00 a.m. - 9:00 p.m.</p>
+    </h2>
+    <p> The NYC Parks and Recreation Department has been around since 1870. Since then, NYC has collected several acres of land which include "800 athletic fields and nearly 1,000 playgrounds, 1,800 basketball courts, 550 tennis courts, 65 public pools, 51 recreational facilities, 15 nature centers, 14 golf courses, and 14 miles of beaches" while also taking care of "1,200 monuments and 23 historic house museums", according to the NYC Department of Parks and Recreation website. To find out more specific details about these parks and recreational facilities, please visit their website:</p>
+    <a href="https://www.nycgovparks.org/" target="_blank">NYC Department of Parks and Recreation</a>
+
+
+  <p style="text-align: center;font-weight: 600;">  The list provided on this website displays {{ total_parks }} park monuments in the five boroughs of New York City.</p>
+    <a href="{{ url_for('home') }}">Back to Home</a>
+  </body>
+</html>
