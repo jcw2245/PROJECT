@@ -1,1 +1,13 @@
-<h1>{{park['title']}}</h1>
+
+<html>
+  <head>
+    <title>{{ park.title }}</title>
+  </head>
+  <body>
+    <h1>{{ park.title }}</h1>
+    <p><strong>Location:</strong> {{ park.location }}</p>
+    <p><strong>Description:</strong> {{ park.description }}</p>
+    <p><strong>Code:</strong> {{ park.park_code }}</p>
+    <a href="/parks">Back to Parks</a>
+  </body>
+</html>
