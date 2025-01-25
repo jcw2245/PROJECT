@@ -28,13 +28,9 @@ def park_detail(park_id):
     if matching_rows.empty:
         return "Park not found", 404
 
-    park = matching_rows.to_dict('records')[0]
+    park = matching_rows.to_dict('records')[0]  
 
     return render_template(
-        'parks.html',
+        'parks.html', 
         park=park
     )
-
-@app.route("/powerplants/<int:plant_id>")
-def powerplant_detail(plant_id):
-    return f"You are looking for the power plant with ID {plant_id}"
