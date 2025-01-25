@@ -1,13 +1,17 @@
 
+<!doctype html>
 <html>
   <head>
     <title>{{ park.title }}</title>
+    <style>
+      h1 { color: darkolivegreen; }
+      p { color: rgb(14, 68, 27); }
+    </style>
   </head>
   <body>
     <h1>{{ park.title }}</h1>
-    <p><strong>Location:</strong> {{ park.location }}</p>
-    <p><strong>Description:</strong> {{ park.description }}</p>
-    <p><strong>Code:</strong> {{ park.park_code }}</p>
-    <a href="/parks">Back to Parks</a>
+    <p><strong>Location:</strong> {{ park.loc }}</p>
+    <p><strong>Description:</strong> {{ park.desc }}</p>
+    <a href="/">Back to Home</a>
   </body>
 </html>
